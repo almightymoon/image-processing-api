@@ -1,0 +1,33 @@
+Image Processing API
+This repository contains an image processing API built using Node.js and MySQL.
+
+Installation
+Clone the repository from GitHub:
+git clone https://github.com/almightymoon/image-processing-api.git
+
+Navigate into the root directory of the project:
+cd image-processing-api
+
+Run Docker Compose to set up the environment:
+docker-compose up
+This will create the necessary Docker containers.
+
+Usage
+Once the Docker containers are up and running, you can inspect the MySQL database container to view the values in the database.
+
+Access the API through the following URL:
+
+http://localhost:3000
+You should see a welcome message indicating that the server is running.
+
+To test the API endpoints, you can use Postman or any other API testing tool.
+
+Make a POST API call to the following endpoint:
+
+http://localhost:3000/api/image/process
+In the request body, select the "raw" option and enter your JSON data.
+
+To run the application locally without Docker, make sure to update the values in the environment file (env) to use host=localhost.
+
+Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
